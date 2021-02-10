@@ -1,13 +1,15 @@
 # bird-rpki-config
+ 
+ This project gets the full IPv4 and IPv6 routing tables into the bird bgp routing daemon (https://bird.network.cz), pulls the validatated RPKI payload (VRP) from a validator and performs RPKI validation.  As is shown in the last line of this file, this information can be used to monitor for valid and invalid prefixes in a script.
 
-I pretty much followed this guide: https://brooks.sh/2019/11/11/validating-bgp-routes-with-rpki-in-bird/
+I pretty much followed this guide: https://brooks.sh/2019/11/11/validating-bgp-routes-with-rpki-in-bird/ for the rpki config
 
 Install bird:
 `sudo yum install -y bird2`
 or
 `sudo apt install -y bird2`
 
-Edit the bird.conf file to your settings
+Edit the `bird.conf` file from this repository to your settings
 
 Add in the bird.conf config to /etc/bird.conf 
 
