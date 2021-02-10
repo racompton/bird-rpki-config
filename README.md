@@ -2,6 +2,8 @@
  
  This project gets the full IPv4 and IPv6 routing tables into the bird bgp routing daemon (https://bird.network.cz), pulls the validatated RPKI payload (VRP) from a validator and performs RPKI validation.  As is shown in the last line of this file, this information can be used to monitor for valid and invalid prefixes in a script.
 
+**Please note that the BGP peer that bird peers with must not be dropping invalids if you want to see them in your instance of bird!
+
 I pretty much followed this guide: https://brooks.sh/2019/11/11/validating-bgp-routes-with-rpki-in-bird/ for the rpki config
 
 Install bird:
