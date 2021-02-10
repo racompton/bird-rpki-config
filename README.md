@@ -1,9 +1,12 @@
 # bird-rpki-config
+
 I pretty much followed this guide: https://brooks.sh/2019/11/11/validating-bgp-routes-with-rpki-in-bird/
+
 Install bird:
 `sudo yum install -y bird2`
 or
 `sudo apt install -y bird2`
+
 Edit the bird.conf file to your settings
 
 Add in the bird.conf config to /etc/bird.conf 
